@@ -1,0 +1,21 @@
+{
+  "name": "test-tray-menu",
+  "productName": "Test Tray Menu",
+  "version": "1.0.0",
+  "description": "Electron test app: tray with menu",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "test",
+    "tray",
+    "menu"
+  ],
+  "author": "Mikaeru",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^5.0.1"
+  }
+}
