@@ -1,4 +1,4 @@
-# test-tray-menu
+# Test Tray Menu
 
 Electron test app: test tray menu, with notification.
 
