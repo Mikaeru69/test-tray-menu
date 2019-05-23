@@ -7,8 +7,9 @@ if (process.platform === 'darwin')
 let tray = null;
 function createTray ()
 {
+    const appName = app.getName ();
     tray = new Tray (nativeImage.createFromDataURL ("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADBJREFUeNpi/P//PwM1AAuIaGRkoMi0+v8MjEwMVAKjBo0aNGrQSDWIkVoFG0CAAQCpvAkfU74BegAAAABJRU5ErkJggg=="));
-    tray.setToolTip (app.getName ());
+    tray.setToolTip (appName);
     if (process.platform === 'darwin')
     {
         tray.setIgnoreDoubleClickEvents (true);
@@ -22,7 +23,7 @@ function createTray ()
                 let myNotification = new Notification
                 (
                     {
-                        title: 'Title',
+                        title: appName,
                         body: 'Lorem Ipsum Dolor Sit Amet'
                     }
                 );
